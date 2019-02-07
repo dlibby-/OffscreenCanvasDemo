@@ -31,6 +31,13 @@ Author: Ewa Gasperowicz (@devnook)
     <h1>
       OffscreenCanvas
     </h1>
+       <style>
+            .overlay {
+                 position:absolute;
+                 top:300px;
+                 left:300px;
+            }
+       </style>
     <div class="desc">
       The OffscreenCanvas allows to create a canvas that can be rendered off screen. It
       can also be used in web workers.
@@ -57,7 +64,7 @@ Author: Ewa Gasperowicz (@devnook)
       <div id="busy">&nbsp;</div>
 
     <div class="display">
-      <div>
+      <div class="overlay">
         <h1>
           Canvas on main thread
         </h1>
