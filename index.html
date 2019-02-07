@@ -89,7 +89,9 @@ Author: Ewa Gasperowicz (@devnook)
         case 'start':
           if (!animationWorker) {
             importScripts(e.data.origin + '/animation.js');
-            animationWorker = new Animation(e.data.canvas.getContext('2d'));
+            ctx = e.data.canvas.getContext('2d');
+            ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
+            animationWorker = new Animation(ctx);
           }
           animationWorker.start();
           break;
